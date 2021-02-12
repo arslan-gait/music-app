@@ -1,0 +1,60 @@
+$color-header: #000000;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e6e6e6;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    margin-left: 20px;
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    color: $color-header;
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+
+    transition: color 0.1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #6592ce;
+    position: absolute;
+    opacity: 0;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity 0.1s linear;
+}
+
+.nav__link:hover {
+    color: #6592ce;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
