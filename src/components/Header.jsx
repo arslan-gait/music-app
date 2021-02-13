@@ -1,26 +1,39 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import MenuIcon from "@material-ui/icons/Menu"
 
-const Header = () => {
+import "../css/Header.scss"
+
+
+const Header = ({ isDark }) => {
+
+  const dark = typeof isDark === "undefined" ? "" : " dark"
 
   return (
-    <div className="header">
-      <div className="header__left">
-        <MenuIcon />
-        <div className="header__logo">
-          <h4>MusicApp</h4>
-        </div>
+    <div className={`header${dark}`}>
+      <div className={`header__left${dark}`}>
+        <MenuIcon className={`header__icon${dark}`} />
+        <Link to="/intro" style={{ textDecoration: 'none' }}>
+          <div className={`header__logo${dark}`}>
+            <h4>MusicApp</h4>
+          </div>
+        </Link>
       </div>
 
       <div className="header__inner">
-        <nav className="nav">
-          <a className="nav__link" href="#">
-            All Songs
-              </a>
-          <a className="nav__link" href="#">
-            Search
-              </a>
-        </nav>
+        <div className="nav">
+          <Link to="/intro" style={{ textDecoration: 'none' }}>
+            <div className={`nav__link${dark}`}>
+              Intro
+            </div>
+          </Link>
+
+          <Link to="/home" style={{ textDecoration: 'none' }}>
+          <div className={`nav__link${dark}`}>
+            Home
+          </div>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../css/Intro.scss"
 
 export default class Inner extends Component {
   render() {

@@ -1,7 +1,16 @@
+$color-hover: lightgray;
+
 .sidebar {
     flex: 0.2;
     // margin-top: 20px;
-    align-items: center;
+}
+
+.sidebar > hr {
+    height: 1px;
+    border: 0;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .sidebarRow{
@@ -19,10 +28,23 @@
 }
 
 .sidebarRow__icon {
-    align-items: center;
+    color: black;
+    font-size: large !important;
 }
 
 .sidebarRow:hover {
-    background-color: lightgray;
+    background-color: $color-hover;
     cursor: pointer;
+}
+
+.sidebarRow:hover > .sidebarRow__icon {
+    color: gray;
+}
+
+.sidebarRow.selected {
+    background-color: $color-hover;
+}
+
+.sidebarRow.selected > .sidebarRow__icon {
+    color: gray;
 }

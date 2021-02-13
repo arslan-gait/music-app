@@ -1,0 +1,26 @@
+.videoCard {
+    width: 50%;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.videoCard__image {
+    height: 250px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.videoCard__info {
+    margin-top: 0;
+    // display: flex;
+    align-items: center;
+}
+
+.videoCard__title {
+    font-weight: bold;
+}
+
+.videoCard__timestamp {
+    font-size: 11px;
+}
