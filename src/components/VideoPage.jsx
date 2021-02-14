@@ -3,7 +3,7 @@ import '../css/VideoPage.scss'
 import { useParams } from 'react-router-dom'
 
 function VideoPage({ text, videoUrl }) {
-  let { songItem } = useParams();
+  let { songItem } = useParams()
 
   return (
     <div className="videoPage">
@@ -12,7 +12,7 @@ function VideoPage({ text, videoUrl }) {
         <p>{text}</p>
       </div>
       <div className="videoPage__video">
-        <iframe width="560" height="315" src={videoUrl} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src={videoUrl} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </div>
   )
