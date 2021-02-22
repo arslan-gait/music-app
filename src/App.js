@@ -5,7 +5,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom'
-import {Header, Sidebar, Home, Intro, VideoPage} from './components'
+import { Header, Sidebar, Home, Intro, VideoPage, ConverterPage } from './components'
 
 function App() {
   return (
@@ -29,8 +29,15 @@ function App() {
           <Route path="/song/:songItem" children={<VideoPage />} >
             <Header />
             <div className="app__page">
-              <Sidebar />
+              <Sidebar selected="home" />
               <VideoPage />
+            </div>
+          </Route>
+          <Route path="/converter" children={<ConverterPage />} >
+            <Header />
+            <div className="app__page">
+              <Sidebar selected="converter" />
+              <ConverterPage />
             </div>
           </Route>
         </Switch>

@@ -4,7 +4,6 @@ import "../css/Home.scss"
 import db from '../firebase'
 
 function Home() {
-
   const [songs, setSongs] = React.useState([])
 
   React.useEffect(() => {
