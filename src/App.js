@@ -1,15 +1,11 @@
 import React from 'react'
-import Header from './components/Header'
-import Sidebar from './components/Sidebar'
-import Home from './components/Home'
-import Intro from './components/Intro'
-import VideoPage from './components/VideoPage'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
 } from 'react-router-dom'
+import {Header, Sidebar, Home, Intro, VideoPage} from './components'
 
 function App() {
   return (
