@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../css/Intro.scss"
 
-export default class Inner extends Component {
+export default class Intro extends Component {
   render() {
     return (
       <div className="intro">

@@ -9,14 +9,21 @@ import "../css/Sidebar.scss"
 
 const Sidebar = () => {
 
+  const [active, setActive] = React.useState(0)
+
   return (
     <div className="sidebar">
-      <Link to="/home">
-        <SidebarRow Icon={HomeIcon} title="Главная" />
+      <Link to="/">
+        <div onClick={() => setActive(0)}>
+          <SidebarRow selected={active === 0} Icon={HomeIcon} title="Главная" />
+        </div>
       </Link>
-      <Link to="/converter">
-        <SidebarRow Icon={InfoIcon} title="Конвертер" />
+      <Link to="/converterPage">
+        <div onClick={() => setActive(1)}>
+          <SidebarRow selected={active === 1} Icon={InfoIcon} title="Конвертер" />
+        </div>
       </Link>
+
       <hr />
     </div>
   )
