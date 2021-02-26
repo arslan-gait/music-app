@@ -20,10 +20,11 @@ function Home() {
       <h2>Home</h2>
       <div className="home__videoCards">
         {songs && songs.map(song => (
-          <VideoCard
-            key={song.data.id}
-            song={song}
-          />
+          <div key={song.data.id}>
+            <VideoCard
+              song={song}
+            />
+          </div>
         ))}
       </div>
     </div>
