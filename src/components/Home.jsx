@@ -21,10 +21,8 @@ function Home() {
       <div className="home__videoCards">
         {songs && songs.map(song => (
           <VideoCard
-            key={song.id}
-            title={song.data.title}
-            image={song.data.imageUrl}
-            timestamp={song.data.timestamp.toDate().toDateString()}
+            key={song.data.id}
+            song={song}
           />
         ))}
       </div>

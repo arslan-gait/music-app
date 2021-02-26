@@ -17,16 +17,18 @@ const Header = ({ isDark }) => {
           <h4>MusicApp</h4>
         </div>
       </div>
-
       <div className="header__inner">
         <div className="nav">
-          <div className={`nav__link${dark}`}>
-            Intro
+          <Link to="/">
+            <div className={`nav__link${dark}`}>
+              Intro
             </div>
-
-          <div className={`nav__link${dark}`}>
-            Home
+          </Link>
+          <Link to="/">
+            <div className={`nav__link${dark}`}>
+              Home
           </div>
+          </Link>
         </div>
       </div>
     </div>

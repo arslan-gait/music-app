@@ -4,12 +4,16 @@ import { Header, Sidebar, Home, Intro, VideoPage, ConverterPage } from './compon
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div className="app__page">
-        <Sidebar />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/converterPage" component={ConverterPage} />
+    <div>
+      <div className="App">
+        {/* <Route exact path="/" component={Intro} /> */}
+        <Header />
+        <div className="app__page">
+          <Sidebar />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/converterPage" component={ConverterPage} />
+          <Route exact path="/videoPage" component={VideoPage} />
+        </div>
       </div>
     </div>
   )
