@@ -17,7 +17,7 @@ function Home() {
 
   return (
     <div className="home">
-      <h2>Home</h2>
+      <h2>Нахшилар</h2>
       <div className="home__videoCards">
         {songs && songs.map(song => (
           <div key={song.data.id}>

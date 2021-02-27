@@ -1,4 +1,17 @@
 .videoPage {
-    flex: 0.8;
-    padding: 20px;
+  padding: 20px;
+  flex: 0.8;
+  white-space: pre;
+}
+
+.videoPage__title {
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.videoPage__row {
+  line-height: 1.4em;
+  margin-top: 0cm;
+  margin-bottom: 0cm;
+  font-family: "Roboto Mono", monospace;
 }

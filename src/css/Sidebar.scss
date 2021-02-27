@@ -1,50 +1,50 @@
-$color-hover: lightgray;
+$color-selected: rgb(147, 228, 255);
 
 .sidebar {
-    flex: 0.2;
-    // margin-top: 20px;
+  flex: 0.2;
+  // margin-top: 20px;
 }
 
 .sidebar > hr {
-    height: 1px;
-    border: 0;
-    background-color: lightgray;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  height: 1px;
+  border: 0;
+  background-color: lightgray;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.sidebarRow{
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
+.sidebarRow {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .sidebarRow__title {
-    align-items: center;
-    flex: 1;
-    margin-left: 20px;
-    font-size: 12px;
-    font-weight: 500;
+  align-items: center;
+  flex: 1;
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .sidebarRow__icon {
-    color: black;
-    font-size: large !important;
+  color: black;
+  font-size: large !important;
 }
 
 .sidebarRow:hover {
-    background-color: $color-hover;
-    cursor: pointer;
+  background-color: $color-selected;
+  cursor: pointer;
 }
 
 .sidebarRow:hover > .sidebarRow__icon {
-    color: gray;
+  color: gray;
 }
 
 .sidebarRow.selected {
-    background-color: $color-hover;
+  background-color: $color-selected;
 }
 
 .sidebarRow.selected > .sidebarRow__icon {
-    color: gray;
+  color: gray;
 }

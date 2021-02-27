@@ -15,7 +15,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <Link to="/">
         <div onClick={() => setActive(0)}>
-          <SidebarRow selected={active === 0} Icon={HomeIcon} title="Главная" />
+          <SidebarRow selected={active === 0} Icon={HomeIcon} title="Нахшилар" />
         </div>
       </Link>
       <Link to="/converterPage">

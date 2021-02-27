@@ -3,12 +3,6 @@ import { Link } from "react-router-dom"
 import '../css/VideoCard.scss'
 
 function VideoCard({ song }) {
-  // key={song.id}
-  // title={song.data.title}
-  // title={song.data.title}
-  // image={song.data.imageUrl}
-  // timestamp={song.data.timestamp.toDate().toDateString()}
-  // text={song.data.text}
   return (
     <Link to={{
       pathname: `/videoPage`,
