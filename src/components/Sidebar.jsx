@@ -23,7 +23,6 @@ const Sidebar = () => {
           <SidebarRow selected={active === 1} Icon={InfoIcon} title="Конвертер" />
         </div>
       </Link>
-
       <hr />
     </div>
   )
